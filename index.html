@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <!--link a CSS-->    
     <link rel="stylesheet" href="css/main.css ">
 
@@ -21,84 +24,112 @@
 </head>
 
 <body> 
-    <div class="contenedorPadreIndex">
+    <div class="contenedorIndex">
         
         <header>
-             <!--logo de la tienda + btm al index-->
-             <div class="headerLogo">   
-                <a href="index.html">   
-                <img class="animate__animated animate__heartBeat" src="img/Logo 200px.png" alt="logo de la marca">
-                </a>
-            </div>
-            
-            <!--Menu de navegacion + stick-->
-            <div class="headerMenu">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html">
-                            Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="pages/aboutUs.html">
-                            About Us
-                            </a>
-                        </li>
-                        <li>
-                            <a href="pages/foodToGo.html">
-                            Food to Go
-                            </a>
-                        </li>
-                        <li>
-                            <a href="pages/faq.html">
-                            FAQs
-                            </a>
-                        </li>
-                        <li>
-                            <a href="pages/contacUs.html">   
-                            Contact Us
-                            </a>        
-                        </li>
-                    </ul>
-                </nav>
+            <!--logo de la tienda + btm al index-->
+            <section class="container propLogo">
+                <div class="row">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/Logo 200px.png" alt="Logo marca" class="animate__animated animate__heartBeat col-sm-12 col-lg-12">
+                    </a>
+                </div>
+            </section>
 
-            <!--carrito de compras-->
+            <!--Menu de navegacion + stick-->
+            <div class="contenedorNavbar">
+
+                <nav class="navbar navbar-expand-md navbar-light menuHeader">
+                    <div class="container listas ">
+                        
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+    
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav col-md-12 col-lg-12 ">
+    
+                                <li class="nav-item ">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="pages/aboutUs.html">About Us</a>
+                                </li>
+                                
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="pages/foodToGo.html">Food to Go</a>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="pages/faq.html">FAQs</a>
+                                </li>
+    
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="pages/contacUs.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+        
+                <!--carrito de compras-->
                 <div class="headerChart">  
-                    <img src="img/Cart-black-75px-transformed.png" alt="carrito de compras">
+                    <img src="img/Cart-black-75px-transformed.png" alt="carrito de compras" >
                 </div>
             </div> 
         </header>
-
+    
         <main>
             <div class="contMainIndex"> 
 
-                <section class="section1">
-                    <div class="imgIndex">
-                        <img class="img1" src="img/index1.jpg" alt="desayuno saludable">
-                        <img class="img2" src="img/portada.jpg" alt="viandas listas para retirar">
-                        <img class="img3" src="img/idenx2.jpg" alt="ensalada saludable">
-                    </div>                       
+                <section>
+                    <!-- nuevo carrusel bootstrap-->
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner contenedorCarrusel">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <img src="img/index1.jpg" class="d-block w-100" alt="desayuno saludable">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="img/portada.jpg" class="d-block w-100" alt="viandas listas para retirar">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="img/idenx2.jpg" class="d-block w-100" alt="ensalada saludable">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>                  
                 </section> 
                 
-                <section class="section2">
-                    <div class="mainIndex">
-                        <!--Detalle de titulo/subtitulo y texto-->  
-                            <div>
-                                <h1 class="editHead">EL ATELIER COCINA</h1>
-                            </div>
-                            <div>
-                                <h2 class="editSubt">Healthy Food</h2>
-                            </div>
-                            <div>
-                                <p class="editP">
-                                El Atelier Cocina not only seeks to cover a nutritional need, but our mission is to create the foundations for a new food trend, where the fundamental objective is to eat healthy food.
-                                </p>
-                            </div>
-                        </div> 
+                <section>
+                    <!--Detalle de titulo/subtitulo y texto-->
+                    <div>
+                        <h1 class="editHead">EL ATELIER COCINA</h1>
+                    </div>
+                    <div>
+                        <h2 class="editSubt">Healthy Food</h2>
+                    </div>
+                    <div>
+                        <p class="editP w-50 mx-auto text-center">
+                        El Atelier Cocina not only seeks to cover a nutritional need, but our mission is to create the foundations for a new food trend, where the fundamental objective is to eat healthy food.
+                        </p>
+                    </div>
                 </section>
 
-                <section class="section3">
+                <section>
                     <!--Logo Whatsapp + fixed replicado en todos los html-->
                     <div class="editWs">
                         <img class="wsAnime" src="img/wsap-transformed.png" alt="logo de WSap">
@@ -108,7 +139,7 @@
             </div>
         </main>
 
-        <footer>
+        <footer class="w-100 text-center">
             <!--imagen derechos reservados-->    
             <div class="footerImgC">  
                 <img src="img/derechos sin fondo 50px.png" alt="Logo de los derechos de autor C">
@@ -132,5 +163,8 @@
         </footer> 
 
     </div>
+    <!--Link de Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
