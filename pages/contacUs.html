@@ -28,26 +28,28 @@
 
         <header>
             <!--logo de la tienda + btm al index-->
-            <section class="container propLogo">
-                <div class="row">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../img/Logo 200px.png" alt="Logo marca" class="animate__animated animate__heartBeat col-sm-12 col-lg-12">
-                    </a>
+            <section class="propLogo">
+                <div class="container-fluid">
+                    <div class="row">
+                        <a class="navbar-brand" href="../index.html">
+                        <img src="../img/Logo 200px.png" alt="Logo marca" class="col-md-12 animate__animated animate__heartBeat ">
+                        </a>
+                    </div>
                 </div>
             </section>
 
             <!--Menu de navegacion + stick-->
-            <div class="contenedorNavbar">
+            <div class="contenedorNavbar d-flex">
 
                 <nav class="navbar navbar-expand-md navbar-light menuHeader">
-                    <div class="container listas ">
+                    <div class="container-fluid">
                         
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
     
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav col-md-12 col-lg-12 ">
+                            <ul class="navbar-nav col-md-12">
     
                                 <li class="nav-item ">
                                     <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
@@ -80,18 +82,26 @@
                 </div>
             </div> 
         </header>
+       
 
-        <main>
+        
             <div class="contMainCu">
                 
                 <div class="contMainCu2">
 
                     <section class="section1">
-                        <!--Titulo Principal-->
-                        <div class="tituloCu">
-                            <h1>CONTACT US</h1>
-                        </div>
-                    
+                       
+                        <main>
+                            <!--titulo cabecera -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12 tituloFtg">
+                                        <h1>CONTACT US</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+
                         <!--detalle de contact us-->
                         <div class="contSectionCu">
                             <div class="contSectionCu1">
@@ -146,11 +156,15 @@
                     </section>
                 </div> 
 
-                <section class="section3">
-                    <!--Logo Whatsapp con efecto fixed-->
-                    <div class="editWs">
-                        <img class="wsAnime" src="../img/wsap-transformed.png" alt="logo de WSap">
-                    </div>
+                <section>
+                    <!--Logo Whatsapp + fixed replicado en todos los html-->
+                   <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 editWs">
+                                <img class="wsAnime" src="../img/wsap-transformed.png" alt="logo de WSap">
+                            </div>
+                        </div>
+                   </div>
                 </section>
 
                 <!--Bottom para volver a la home-->
@@ -162,30 +176,32 @@
                 </div>
 
             </div>    
-        </main>
-
-        <footer class="container-fluid text-center">
-            <!--imagen derechos reservados-->    
-            <div class=" row footerImgC d-block text-center">  
-                <img class="col-md-12" src="img/derechos sin fondo 50px.png" alt="Logo de los derechos de autor C">
-            </div>
-
-            <!--Detalle de derechos reservados--> 
-            <div class=" row footerText d-block">    
-                <h3 class="col-md-6">2022 copyright.</h3> 
-                <h3 class="col-md-6" > Created by <span>LeoNumbela</span></h3> 
-            </div>
-
-            <!--Logo de las redes con enlaces absolutos-->
-            <div class=" row footerRedes d-block">
-                <a href="https://www.facebook.com/elateliercocina" target="blank">
-                 <img class="col-md-6  sideF" src="img/face-transformed 75px.png" alt=" logo de facebook">
-                </a>
-                <a href="https://www.instagram.com/el_atelier_cocina" target="blank">
-                 <img class="col-md-6 sideI" src="img/inst-transformed-75px-transformed.png" alt="logo de instagram">
-                </a>
-            </div>
-        </footer> 
+        
+            <footer class="container-fluid">
+                <!--imagen derechos reservados-->    
+                <div class="row">
+                    <div class="col-md-3 footerC d-flex">  
+                        <img src="../img/derechos sin fondo 50px.png" alt="Logo de los derechos de autor C">
+                    </div>
+                    
+                    <!--Detalle de derechos reservados--> 
+                    <div class=" col-md-6 footerText d-flex">    
+                        <h3>2022 copyright.</h3> 
+                        <h3> Created by <span>LeoNumbela</span></h3> 
+                    </div>
+                    
+                    <!--Logo de las redes con enlaces absolutos-->
+                    <div class="col-md-3 footerRedes text-center">
+                        <a href="https://www.facebook.com/elateliercocina" target="blank">
+                         <img class="sideF" src="../img/face-transformed 75px.png" alt=" logo de facebook">
+                        </a>
+                        <a href="https://www.instagram.com/el_atelier_cocina" target="blank">
+                         <img class="sideI" src="../img/inst-transformed-75px-transformed.png" alt="logo de instagram">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+       
 
     </div>
 

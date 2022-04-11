@@ -28,26 +28,28 @@
 
         <header>
             <!--logo de la tienda + btm al index-->
-            <section class="container propLogo">
-                <div class="row">
-                    <a class="navbar-brand" href="../index.html">
-                        <img src="../img/Logo 200px.png" alt="Logo marca" class="animate__animated animate__heartBeat col-sm-12 col-lg-12">
-                    </a>
+            <section class="propLogo">
+                <div class="container-fluid">
+                    <div class="row">
+                        <a class="navbar-brand" href="../index.html">
+                        <img src="../img/Logo 200px.png" alt="Logo marca" class="col-md-12 animate__animated animate__heartBeat ">
+                        </a>
+                    </div>
                 </div>
             </section>
 
             <!--Menu de navegacion + stick-->
-            <div class="contenedorNavbar">
+            <div class="contenedorNavbar d-flex">
 
                 <nav class="navbar navbar-expand-md navbar-light menuHeader">
-                    <div class="container listas ">
+                    <div class="container-fluid">
                         
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                         </button>
     
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav col-md-12 col-lg-12 ">
+                            <ul class="navbar-nav col-md-12">
     
                                 <li class="nav-item ">
                                     <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
@@ -80,20 +82,24 @@
                 </div>
             </div> 
         </header>
-
         
         <div class="contMainFtg">
             
             <main>
-                <div class="tituloFtg">
-                    <h1>FOOD TO GO!!!</h1>
+                <!--titulo cabecera -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 tituloFtg">
+                            <h1>FOOD TO GO!!!</h1>
+                        </div>
+                    </div>
                 </div>
             </main>
 
             <!--Nueva section cards de productos-->
-            <section class="container-fluid section1">
-                <div class="row">
-                    <div class="col-md-4">
+            <section class="container-fluid ">
+                <div class="row section1Ftg">
+                    <div class="col-sm-6 col-md-4">
                         <div class="card" style="width: 15rem;">
                             <img src="../img/hamburger.jpg" class="card-img-top" alt="Hamburguesas">
                             <div class="card-body">
@@ -106,7 +112,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-md-4"> 
+                    <div class="col-sm-6 col-md-4"> 
                         <div class="card" style="width: 15rem;">
                             <img src="../img/la tarta.jpg" class="card-img-top" alt="Tartas">
                             <div class="card-body">
@@ -117,7 +123,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4"> 
+                    <div class="col-sm-6 col-md-4"> 
                         <div class="card" style="width: 15rem;">
                             <img src="../img/las empanadas.jpg" class="card-img-top" alt="Empanadas de masa integral">
                             <div class="card-body">
@@ -132,9 +138,9 @@
                 </div>
             </section>
 
-            <section class="container-fluid text-center section2">
+            <section class="container-fluid text-center section2Ftg">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-sm-6 col-md-4">
                         <div class="card" style="width: 15rem;">
                             <img src="../img/los creps.jpg" class="card-img-top" alt="Creps rellenos de ricotta">
                             <div class="card-body">
@@ -144,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-6 col-md-4">
                         <div class="card" style="width: 15rem;">
                             <img src="../img/la pizza.jpg" class="card-img-top" alt="Pizzas de Harina integral">
                             <div class="card-body">
@@ -155,7 +161,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-sm-6 col-md-4">
                         <div class="card" style="width: 15rem;">
                             <img src="../img/el pudding.jpg" class="card-img-top" alt="Budines de masa integral">
                             <div class="card-body">
@@ -168,36 +174,41 @@
                 </div>
             </section> 
 
-            <section class="section3">
-                <!--Logo Whatsapp con efecto fixed-->
-                <div class="editWs">
-                    <img class="wsAnime" src="../img/wsap-transformed.png" alt="logo de WSap">
-                </div>
+            <section>
+                <!--Logo Whatsapp + fixed replicado en todos los html-->
+               <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 editWs">
+                            <img class="wsAnime" src="../img/wsap-transformed.png" alt="logo de WSap">
+                        </div>
+                    </div>
+               </div>
             </section>
 
         </div>
-        
 
-        <footer class="container-fluid text-center">
+        <footer class="container-fluid">
             <!--imagen derechos reservados-->    
-            <div class=" row footerImgC d-block text-center">  
-                <img class="col-md-12" src="../img/derechos sin fondo 50px.png" alt="Logo de los derechos de autor C">
-            </div>
-
-            <!--Detalle de derechos reservados--> 
-            <div class=" row footerText d-block">    
-                <h3 class="col-md-6">2022 copyright.</h3> 
-                <h3 class="col-md-6" > Created by <span>LeoNumbela</span></h3> 
-            </div>
-
-            <!--Logo de las redes con enlaces absolutos-->
-            <div class=" row footerRedes d-block">
-                <a href="https://www.facebook.com/elateliercocina" target="blank">
-                 <img class="col-md-6  sideF" src="../img/face-transformed 75px.png" alt=" logo de facebook">
-                </a>
-                <a href="https://www.instagram.com/el_atelier_cocina" target="blank">
-                 <img class="col-md-6 sideI" src="../img/inst-transformed-75px-transformed.png" alt="logo de instagram">
-                </a>
+            <div class="row">
+                <div class="col-md-3 footerC d-flex">  
+                    <img src="../img/derechos sin fondo 50px.png" alt="Logo de los derechos de autor C">
+                </div>
+                
+                <!--Detalle de derechos reservados--> 
+                <div class=" col-md-6 footerText d-flex">    
+                    <h3>2022 copyright.</h3> 
+                    <h3> Created by <span>LeoNumbela</span></h3> 
+                </div>
+                
+                <!--Logo de las redes con enlaces absolutos-->
+                <div class="col-md-3 footerRedes text-center">
+                    <a href="https://www.facebook.com/elateliercocina" target="blank">
+                     <img class="sideF" src="../img/face-transformed 75px.png" alt=" logo de facebook">
+                    </a>
+                    <a href="https://www.instagram.com/el_atelier_cocina" target="blank">
+                     <img class="sideI" src="../img/inst-transformed-75px-transformed.png" alt="logo de instagram">
+                    </a>
+                </div>
             </div>
         </footer> 
        

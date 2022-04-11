@@ -8,16 +8,14 @@
       background-color: #A3E4D7;
       position: sticky;
       top: 0;
-      z-index: 1 !important;
+      z-index: 2 !important;
    }
    /*Propiedades del logo*/
    .propLogo{
-      display: flex;
-      justify-content: center;
       text-align: center;
    }
    .propLogo img{
-      width: 70%;
+      width: 35%;
    }
    /*animacion del logo*/
    .propLogo img:hover{
@@ -29,7 +27,6 @@
       color: white;
    }
    .contenedorNavbar{
-      display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       align-items: center;
@@ -68,12 +65,17 @@
       background-color: rgb(128, 118, 118);
    }
    /*Propiedades de "C"*/
-   .footerImgC{
-      padding: 0.2rem; 
+   .footerC{
+      justify-content: center;
+      padding: 0.5rem; 
+      
    }
    /*tamano de imagen legal "C"*/
-   .footerImgC img{
-    max-width: 10%;
+   .footerC img{
+    width: 5%;
+   }
+   .footerText{
+      justify-content: center;
    }
    /*color y size del H3*/
    .footerText h3{
@@ -93,7 +95,8 @@
    }
    /*Face & Instagram size*/
    .sideF, .sideI{
-      width: 5.5%;
+      width: 7.5%;
+      padding: 0.25rem;
    }
    /*Animacion logo Face*/
    .sideF:hover{
@@ -112,7 +115,7 @@
 
    /*----Propiedades Main-index----*/
    /*---version Mobile 576px---*/
-   .contenedorIndex{
+   .contMainIndex{
       background-image: url(../img/pared.jpg);
       background-size: cover;
    }
@@ -126,14 +129,9 @@
    }
    .contenedorCarrusel img{
       margin: 1rem 0rem;
-      border: 0.1rem solid black;
+      border: 0.1rem solid whitesmoke;
    }
-   
-   /*section2-index*/     
-      /*H1-H2-P color, size, margenes y paddins*/
-   .mainIndex{
-      text-align: center;
-   }
+   /*H1-H2-P color, size, margenes y paddins*/
    .editHead{
       color: #1C2833;
       text-align: center;
@@ -179,12 +177,33 @@
 
 /*-------------------------------------*/
    
-      /*----Propiedades Main-aboutUs----*/
-      /*---Version Mobile 576px---*/
+   /*----Propiedades Main-aboutUs----*/
+   /*---Version Mobile 576px---*/
+   .contMainAu{
+      background-image: url(../img/index.fondo\ madera.jpg);
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+      color: #1C2833;
+   }
+   .tituloAu{
+      padding: 1rem 0 1.5rem 2rem;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+   }
+   .section1Au, .section2Au{
+      text-align: center;
+   }
+   .videoAu video{
+      width: 15rem;
+      height: 13rem;
+      border: 1.5px solid black;
+      background-color: #1C2833;
+   }
 
       
-      /*----cierre Main-About Us----*/
-      /*---version Mobile 576px---*/
+   /*----cierre Main-About Us----*/
+   /*---version Mobile 576px---*/
       
    /*-------------------------------------*/
 
@@ -229,24 +248,23 @@
       
       /*----cierre Main-Contact Us----*/
       /*---version Mobile 576px---*/
-   
 
-   @media only screen and (min-width: 768px){
+/*-----------------------------------------*/   
+
+@media only screen and (min-width: 768px){
 
       /*----Propiedades  Header----*/
       /*---Todos los html---*/
       /*---version ipad/laptop 768px---*/
      
       .propLogo{
-         display: flex;
-         justify-content: flex-start;
-         text-align: center;
+         text-align: left;
+         margin-left: 5rem;
       }
       .propLogo img{
-         width: 90%;
+         width: 200px;
       }
       .contenedorNavbar{
-         display: flex;
          flex-flow: row nowrap;
          justify-content: end;
          align-items: flex-end;
@@ -266,22 +284,32 @@
       /*----Propiedades  Footer----*/
       /*---todos los html---*/
       /*---version desktop 768px--*/ 
-     .footerImgC{
-        width: 50%;
+      footer{
+         height: 65px;
+      }
+      .footerC{
+         justify-content: center;
+         align-items: center;
+         padding: 0.25em;
+      }
+     .footerC img{
+        width: 30px;
       }
       .footerText{
-         text-align: center !important;
+       justify-content: center;
+       align-items: center;
       }
-      .footerImgC{
-         align-items: center;
-      }
-
+      .footerText h3{
+         font-size: 1.15rem;
+        }
       .footerRedes{
-         display: flex;
-         justify-content: center;
-         text-align: end; 
+         justify-content: end;
+         text-align: center;
+         Padding: 0.25rem 0.15rem;
       }
-      
+      .footerRedes img{
+         width: 50px;
+      }
       /*----Cierre  Footer----*/
       /*---version desktop 768px---*/
 
@@ -291,7 +319,6 @@
       /*---version ipad/laptop 768px---*/
 
       #carouselExampleIndicators{
-         display: flex;
          justify-content: center;
       }
       .editHead{
@@ -317,18 +344,17 @@
        
       }
       /*----cierre Main-Index----*/
-      /*---version desktop 1024px---*/
+      /*---version desktop 768px---*/
 
     /*-------------------------------------*/
 
-
-
-
-   
-      
       /*--Propiedades Main-About Us--*/
-      /*---version desktop 1024px---*/  
-     
+      /*---version desktop 768px---*/  
+     .section1Au .section2Au{
+        text-align: center;
+        
+     }
+    
       /*----Cierre Main-About us----*/
       /*---version desktop 1024px--*/   
    
