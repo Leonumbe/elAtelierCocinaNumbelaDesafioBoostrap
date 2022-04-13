@@ -1,4 +1,8 @@
-
+  /*Reset*/
+  *{
+      margin: 0;
+      padding: 0;
+   }
    /*----Propiedades  header----*/
    /*---Version Mobile 576px---*/
    body .contenedorIndex{
@@ -13,9 +17,6 @@
    /*Propiedades del logo*/
    .propLogo{
       text-align: center;
-   }
-   .propLogo img{
-      width: 35%;
    }
    /*animacion del logo*/
    .propLogo img:hover{
@@ -56,7 +57,6 @@
    /*----cierre del Header----*/
    /*---version Mobile 576px---*/
 
-
 /*-------------------------------------*/
    
    /*----Propiedades Footer----*/
@@ -68,7 +68,6 @@
    .footerC{
       justify-content: center;
       padding: 0.5rem; 
-      
    }
    /*tamano de imagen legal "C"*/
    .footerC img{
@@ -91,7 +90,6 @@
    /*ubicacionde redes sociales*/
    .footerRedes img{
       margin-bottom: 0.5rem;
-      
    }
    /*Face & Instagram size*/
    .sideF, .sideI{
@@ -120,27 +118,13 @@
       background-size: cover;
    }
    .contenedorCarrusel{
-      max-height: 45%;
-      max-width: 65%;
+      max-height: 35%;
+      max-width: 55%;
       margin: 0.75rem;
    }
    .contenedorCarrusel img{
       margin: 1rem 0rem;
-      border: 0.1rem solid whitesmoke;
-   }
-   /*H1-H2-P color, size, margenes y paddins*/
-   .editHead{
-      color: #1C2833;
-      text-align: center;
-      font-size: 2.5rem;
-   }
-   .editSubt{
-      color:  #1c2833d8;
-      font-size: 2rem;
-   }
-   .editP{
-      color: #1c2833be;
-      font-size: 1rem;
+      border: 0.5rem solid whitesmoke;
    }
    /*WS position fixed*/
    .editWs img{
@@ -159,7 +143,6 @@
       0%{ transform: scale(1)}
       50%{ transform: scale(1.10)}
    }
-
    /*----cierre Main-index----*/
    /*---version Mobile 576px---*/
 
@@ -173,280 +156,249 @@
       font-family: 'Roboto', sans-serif;
       color: #1C2833;
    }
-   .tituloAu{
-      padding: 1rem 0 1.5rem 2rem;
-      text-align: center;
-      font-size: 1rem;
-      font-weight: bold;
-   }
    .section1Au, .section2Au{
       text-align: center;
    }
-   .section1Au img, .section2Au img{
-      border-radius: 0.5rem;
-   } 
-       
+   .cardAu img{
+      border-radius: 1rem;
+   }
    .videoAu video{
       width: 15rem;
       height: 13rem;
       border: 1.5px solid black;
       background-color: #1C2833;
    }
-
-      
    /*----cierre Main-About Us----*/
    /*---version Mobile 576px---*/
       
-   /*-------------------------------------*/
+/*-------------------------------------*/
 
-      /*----Propiedades  Main-FoodtoGo----*/
-      /*---Version Mobile 576px---*/
-      .contMainFtg{
-         background-image: url(../img/pared.jpg);
-         background-size: cover;
-         font-family: 'Roboto', sans-serif;
-         color: #1C2833;
-      }
-      /*titulo Ftg*/
-      .tituloFtg h1{
-         padding-top: 1rem ;
-         font-size: 2rem;
-         font-weight: bold;
-      }
-      .card{
-         padding: 0px;
-         margin: 1rem;
-      }
-      .card img{
-         border: 3.5px solid white;
-      }
-       
-     
-      /*----cierre Main FoodtoGo----*/
-      /*---version Mobile 576px---*/
+   /*----Propiedades  Main-FoodtoGo----*/
+   /*---Version Mobile 576px---*/
+   .contMainFtg{
+      background-image: url(../img/pared.jpg);
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+      color: #1C2833;
+   }
+   /*titulo Ftg*/
+   .tituloFtg h1{
+      font-size: 2rem;
+   }
+   .card{
+      margin: 2rem;
+   }
+   .card img{
+      border: 3.5px solid white;
+   }
+   /*----cierre Main FoodtoGo----*/
+   /*---version Mobile 576px---*/
 
-   /*-------------------------------------*/
+/*-------------------------------------*/
 
-      /*----Propiedades Main-Faqs----*/
-      /*---Version Mobile 576px---*/
-      .contMainFaqs{
-         background-image: url(../img/philosophy\ \(2\).jpg);
-         background-size: cover;
-         font-family:'Roboto', sans-serif;
-         color: #1C2833;
-      }
-      .tituloFaqs h1{
-         font-size: 5rem;
-         font-weight: bold;
-         background-color: rgba(245, 245, 245, 0.26);
-      }
-      .subFaqs h2{
-         font-size: 2rem;
-         font-weight: bold;
-         background-color: rgba(245, 245, 245, 0.26);
-      }
-      .contSectionFaq{
-         margin:10rem;
-      }
-      .accordion-button{
-         background-color:rgba(245, 245, 245, 0.26) !important;
-      }
-      /*----cierre Main-Faqs----*/
-      /*---version Mobile 576px---*/
+   /*----Propiedades Main-Faqs----*/
+   /*---Version Mobile 576px---*/
+   .contMainFaqs{
+      background-image: url(../img/philosophy\ \(2\).jpg);
+      background-size: cover;
+      font-family:'Roboto', sans-serif;
+      color: #1C2833;
+   }
+   .tituloFaqs{
+      font-size: 5rem;
+      background-color: rgba(245, 245, 245, 0.26);
+   }
+   .subFaqs{
+      background-color: rgba(245, 245, 245, 0.26);
+   }
+   .section2{
+      padding: 3rem;
+   }
+   .accordion-button{
+      background-color:rgba(245, 245, 245, 0.26) !important;
+   }
+   /*----cierre Main-Faqs----*/
+   /*---version Mobile 576px---*/
 
-   /*-------------------------------------*/
+/*-------------------------------------*/
 
-      /*----Propiedades Main-Contact Us----*/
-      /*---Version Mobile 576px---*/
-      .contenedorCu{
-         background-image: url(../img/index.fondo\ madera.jpg);
-         background-size: cover;
-      } 
-      .tituloCu h1{
-         font-size: 2rem;
-      }
-      .contSectionCu1 img{
-         width: 10%;
-      }
-      .contSectionCu1 h3{
-         font-size: 1rem;
-      }
-      /*----cierre Main-Contact Us----*/
-      /*---version Mobile 576px---*/
+   /*----Propiedades Main-Contact Us----*/
+   /*---Version Mobile 576px---*/
+   .contenedorCu{
+      background-image: url(../img/index.fondo\ madera.jpg);
+      background-size: cover;
+   } 
+   .contSectionCu1 img{
+      width: 10%;
+   }
+   .contSectionCu1 h3{
+      font-size: 1rem;
+   }
+      /*Animacion Botton back*/
+      .backHomeCu img:hover{
+      transform: scale(1.2);
+   }
+   .backHomeCu img{
+      transition: 2s;
+   }
+   .backHomeCu p{
+      color:rgb(53, 52, 52);
+   }
+   /*----cierre Main-Contact Us----*/
+   /*---version Mobile 576px---*/
 
 /*-----------------------------------------*/   
 
 @media only screen and (min-width: 768px){
 
-      /*----Propiedades  Header----*/
-      /*---Todos los html---*/
-      /*---version ipad/laptop 768px---*/
-     
-      .propLogo{
-         text-align: left;
-         margin-left: 5rem;
-      }
-      .propLogo img{
-         width: 200px;
-      }
-      .contenedorNavbar{
-         flex-flow: row nowrap !important;
-         justify-content: end;
-         align-items: flex-end;
-      }
-      .menuHeader li a{
-         font-size: 0.75rem;
-      }
-      .headerChart img{
-         width: 50%;
-         padding-bottom: 0.5rem;
-      }
-      /*----Cierre  header----*/
-      /*---version laptop 768px---*/ 
-
-    /*-------------------------------------*/
-
-      /*----Propiedades  Footer----*/
-      /*---todos los html---*/
-      /*---version desktop 768px--*/ 
-      footer{
-         height: 65px;
-      }
-      .footerC{
-         justify-content: center;
-         align-items: center;
-         padding: 0.25em;
-      }
-     .footerC img{
-        width: 30px;
-      }
-      .footerText{
-       justify-content: center;
-       align-items: center;
-      }
-      .footerText h3{
-         font-size: 1.15rem;
-        }
-      .footerRedes{
-         justify-content: end;
-         text-align: center;
-         Padding: 0.25rem 0.15rem;
-      }
-      .footerRedes img{
-         width: 50px;
-      }
-      /*----Cierre  Footer----*/
-      /*---version desktop 768px---*/
-
-    /*-------------------------------------*/
-      
-      /*----Propiedades Main-Index----*/
-      /*---version ipad/laptop 768px---*/
-
-      #carouselExampleIndicators{
-         justify-content: center;
-      }
-      .editHead{
-         font-size: 4.5rem;
-         font-weight: bold;
-         padding-top: 0.5rem;
-         padding-bottom: 0.5rem;
-      }
-      .editSubt{
-         text-align: center;
-         color:  #1c2833d8;
-         font-size: 2.5rem;
-         font-weight: bolder;
-         padding-bottom: 1rem;
-      }
-      .editP{
-         display: block;
-         color: #1c2833be;
-         font-weight: bold;
-         font-size: 1.15rem;
-         text-align: center; 
-         padding-bottom: 1.5rem;
-       
-      }
-      /*----cierre Main-Index----*/
-      /*---version desktop 768px---*/
-
-    /*-------------------------------------*/
-
-      /*--Propiedades Main-About Us--*/
-      /*---version desktop 768px---*/  
-      .card-body{
-         padding-top: 0.3rem;
-      }  
-      .tituloAu{
-         text-align: left;
-         padding-left: 5rem;
-         font-weight: bold;
-      }   
-      .section1Au, .section2Au{
-         text-align: justify;
-      }               
-      .section1Au img, .section2Au img{
-         border-radius: 0.5rem;
-      } 
-                    
-    
-      /*----Cierre Main-About us----*/
-      /*---version desktop 1024px--*/   
+   /*----Propiedades  Header----*/
+   /*---Todos los html---*/
+   /*---version ipad/laptop 768px---*/
    
-
-    /*-------------------------------------*/
-
-      /*---Propiedades Main-FoodtoGo--*/
-      /*---version desktop 1024px---*/ 
-      
-       /*titulo Ftg*/
-       .tituloFtg{
-         padding: 1rem 0 1.5rem 2rem;
-         text-align: left;
-         
-      }
-      .tituloFtg h1{
-         font-size: 3rem !important;
-         font-weight: bold;
-         margin-left: 5rem;
-      }
-      .card{
-         padding: 0px;
-
-      }
-      .card img{
-         border: 3.5px solid white;
-      }
-      /*----Cierre Main-FoodtoGo----*/
-      /*---version desktop 768px--*/ 
-   
-    /*-------------------------------------*/
-   
-
-      /*----Propiedades Main-Faqs----*/
-      /*----version Desktop 768px-----*/
-    
-
-      /*----Cierre Main-Faqs----*/
-      /*---version Desktop 768px--*/
-   
-    /*-------------------------------------*/
-  
-
-      /*---Propiedades Main-Contact Us---*/
-      /*---Version desktop 1024px---*/
-      .contenedorCu{
-         background-image: url(../img/index.fondo\ madera.jpg);
-         background-size: cover;
-      }  
-      /*----Cierre Main-Contact Us----*/
-      /*---version desktop 1024---*/
-      
+   .propLogo{
+      text-align: left;
+      margin-left: 5rem;
    }
+   .propLogo img{
+      width: 220px;
+   }
+   .contenedorNavbar{
+      flex-flow: row nowrap !important;
+      justify-content: end;
+      align-items: flex-end;
+   }
+   .menuHeader li a{
+      font-size: 1.25rem;
+   }
+   .headerChart img{
+      width: 60%;
+      padding-bottom: 0.5rem;
+   }
+   /*----Cierre  header----*/
+   /*---version laptop 768px---*/ 
 
-      /*--No es magia es codigo!!!!--*/
-               /*--fin--*/
+   /*-------------------------------------*/
+
+   /*----Propiedades  Footer----*/
+   /*---todos los html---*/
+   /*---version desktop 768px--*/ 
+   footer{
+      height: 75px;
+   }
+   .footerC{
+      justify-content: center;
+      align-items: center;
+      padding: 0.25em;
+   }
+   .footerC img{
+      width: 30px;
+   }
+   .footerText{
+      justify-content: center;
+      align-items: center;
+   }
+   .footerText h3{
+      font-size: 1.15rem;
+      }
+   .footerRedes{
+      justify-content: end;
+      text-align: center;
+      Padding: 0.25rem 0.15rem;
+   }
+   .footerRedes img{
+      width: 50px;
+   }
+   /*----Cierre  Footer----*/
+   /*---version desktop 768px---*/
+
+   /*-------------------------------------*/
+      
+   /*----Propiedades Main-Index----*/
+   /*---version ipad/laptop 768px---*/
+   .editHead{
+      font-size: 3.5rem;
+   }
+   .editSubt{
+      color:  #1c2833d8;
+      font-size: 2.5rem;
+   }
+   .editP{
+      color: #1c2833be;
+      font-size: 1.5rem;
+   }
+   /*----cierre Main-Index----*/
+   /*---version desktop 768px---*/
+
+   /*-------------------------------------*/
+
+   /*--Propiedades Main-About Us--*/
+   /*---version desktop 768px---*/  
+   .tituloAu{
+      text-align: left !important;
+      padding-left: 5rem !important;
+   }   
+   .section1Au, .section2Au{
+      text-align: justify;
+   }               
+   .section1Au img, .section2Au img{
+      border-radius: 0.5rem;
+   } 
+   /*----Cierre Main-About us----*/
+   /*---version desktop 1024px--*/   
+
+   /*-------------------------------------*/
+
+   /*---Propiedades Main-FoodtoGo--*/
+   /*---version desktop 1024px---*/ 
+   
+      /*titulo Ftg*/
+      .tituloFtg{
+      padding: 1rem 0 1.5rem 2rem;
+      text-align: left;
+   }
+   .tituloFtg h1{
+      font-size: 3rem !important;
+   }
+   .card img{
+      border: 3.5px solid white;
+   }
+   /*----Cierre Main-FoodtoGo----*/
+   /*---version desktop 768px--*/ 
+
+   /*-------------------------------------*/
+
+   /*----Propiedades Main-Faqs----*/
+   /*----version Desktop 768px-----*/
+   
+
+   /*----Cierre Main-Faqs----*/
+   /*---version Desktop 768px--*/
+
+   /*-------------------------------------*/
+
+   /*---Propiedades Main-Contact Us---*/
+   /*---Version desktop 768px---*/
+   .contenedorCu{
+      background-image: url(../img/index.fondo\ madera.jpg);
+      background-size: cover;
+   } 
+   .tituloCu h1{
+      text-align: left !important;
+      padding-left: 5rem;
+   }
+   .contSectionCu1 img{
+      width: 10%;
+   }
+   .contSectionCu1 h3{
+      font-size: 1.5rem;
+   }
+   /*----Cierre Main-Contact Us----*/
+   /*---version desktop 768---*/
+   
+}
+
+      /*--No es magia es codigo--*/
+      /*--Fede castro lo dijo--*/
 
 
  
