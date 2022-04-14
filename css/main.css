@@ -163,8 +163,7 @@
       border-radius: 1rem;
    }
    .videoAu video{
-      width: 15rem;
-      height: 13rem;
+      
       border: 1.5px solid black;
       background-color: #1C2833;
    }
@@ -214,9 +213,14 @@
    .section2{
       padding: 3rem;
    }
-   .accordion-button{
-      background-color:rgba(245, 245, 245, 0.26) !important;
+   .estilosAcordion{
+      background-color: rgba(214, 205, 205, 0.541);
    }
+   .estiloTextoAcord{
+      background-color:rgba(245, 245, 245, 0.356) !important;
+      font-weight: bold;
+   }
+
    /*----cierre Main-Faqs----*/
    /*---version Mobile 576px---*/
 
@@ -352,17 +356,25 @@
    /*---version desktop 1024px---*/ 
    
       /*titulo Ftg*/
-      .tituloFtg{
+   .tituloFtg{
       padding: 1rem 0 1.5rem 2rem;
       text-align: left;
+      font-size: 3.5rem;
    }
    .tituloFtg h1{
       font-size: 3rem !important;
    }
    .card img{
-      border: 3.5px solid white;
+      border: 1.5px solid white;
    }
-   /*----Cierre Main-FoodtoGo----*/
+   .estiloCard{
+      background-color: whitesmoke;
+   }
+   .btn:hover{
+      transform: scale(1.1);
+      box-shadow: #1C2833;
+   }
+    /*----Cierre Main-FoodtoGo----*/
    /*---version desktop 768px--*/ 
 
    /*-------------------------------------*/
