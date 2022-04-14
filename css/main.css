@@ -238,8 +238,14 @@
    .contSectionCu1 h3{
       font-size: 1rem;
    }
-      /*Animacion Botton back*/
-      .backHomeCu img:hover{
+   .estilosForm{
+      font-family:'Roboto', sans-serif;
+      color: #1C2833;
+      font-weight: bold;
+      padding-left: 1rem;
+   }
+   /*Animacion Botton back*/
+   .backHomeCu img:hover{
       transform: scale(1.2);
    }
    .backHomeCu img{
@@ -357,9 +363,9 @@
    
       /*titulo Ftg*/
    .tituloFtg{
-      padding: 1rem 0 1.5rem 2rem;
+      padding: 1rem 0 1.5rem 5rem;
       text-align: left;
-      font-size: 3.5rem;
+      font-size: 4rem;
    }
    .tituloFtg h1{
       font-size: 3rem !important;
@@ -370,6 +376,7 @@
    .estiloCard{
       background-color: whitesmoke;
    }
+
    .btn:hover{
       transform: scale(1.1);
       box-shadow: #1C2833;
